@@ -39,3 +39,17 @@ VALUES ('Michael ', 25000, 'Driver', 1, 'No');
 
 INSERT INTO "Employees" ("FullName", "Salary", "JobPosition", "PhoneExtension", "IsPartTime")
 VALUES ('Graham', 5000, 'Dog Trainer', 32, 'Yes');
+
+SELECT * FROM "Employees";
+
+SELECT "FullName", "PhoneExtension" FROM "Employees" WHERE "IsPartTime" = 'No'; 
+
+INSERT INTO "Employees" ("FullName", "Salary", "JobPosition", "PhoneExtension", "IsPartTime")
+VALUES ('Austin', 450, 'Software Developer', 47, 'Yes');
+
+UPDATE "Employees" SET "Salary" = '500' WHERE "JobPosition" = 'Cook';
+
+DELETE FROM "Employees" WHERE "FullName" = 'Lazy Larry';
+
+ALTER TABLE "Employees" ADD COLUMN "ParkingSpot" VARCHAR(10);
+
