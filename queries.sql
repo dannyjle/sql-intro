@@ -106,3 +106,9 @@ VALUES (99.99, 'Flowbee', 'Perfect for haircuts', 3);
 
 INSERT INTO "Orders" ("OrderNumber", "DatePlaced", "Email")
 VALUES ('X529', '01/01/2020 4:55PM', 'person@example.com');
+
+INSERT INTO "ProductOrders" ("ProductId", "OderID", "OrderQuantity") 
+VALUES (1, 1, 3);
+
+INSERT INTO "ProductOrders" ("ProductId", "OrderId", "OrderQuantity") 
+VALUES (2, 1, 2); 
