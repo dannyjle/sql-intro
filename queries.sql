@@ -53,3 +53,8 @@ DELETE FROM "Employees" WHERE "FullName" = 'Lazy Larry';
 
 ALTER TABLE "Employees" ADD COLUMN "ParkingSpot" VARCHAR(10);
 
+CREATE TABLE "Departments" (
+  "Id"  SERIAL PRIMARY KEY,
+  "DepartmentName"  TEXT,
+  "Building"  TEXT,
+);
