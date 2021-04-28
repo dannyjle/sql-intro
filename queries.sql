@@ -97,3 +97,9 @@ VALUES ('Barbara Ramsey', 80000, 'Manager', 234, 'No', 1);
 
 INSERT INTO "Employees" ("FullName",  "Salary", "JobPosition", "PhoneExtension", "IsPartTime", "DepartmentId")
 VALUES ('Tom Jones', 32000, 'Admin', 456, 'Yes', 2);
+
+INSERT INTO "Products" ("Price",  "Name", "Description", "QuantityInStock")
+VALUES (12.45, 'Widget', 'The Original Widget', 100);
+
+INSERT INTO "Products" ("Price",  "Name", "Description", "QuantityInStock")
+VALUES (99.99, 'Flowbee', 'Perfect for haircuts', 3);
