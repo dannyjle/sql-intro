@@ -68,3 +68,17 @@ CREATE TABLE "Products" (
   "Description"  TEXT,
   "QuantityInStock"  INT
 );
+
+CREATE TABLE "Orders" (
+  "Id"	SERIAL PRIMARY KEY,
+  "OrderNumber"  TEXT,
+  "DatePlaced"  DATE,
+  "Email"  TEXT
+);
+
+CREATE TABLE "ProductOrders" (
+  "Id"       SERIAL PRIMARY KEY,
+  "ProductId"  INTEGER REFERENCES "Products" ("Id"),
+  "OrderId"  INTEGER REFERENCES "Orders" ("Id"),
+  OrderQuantity INT
+);
