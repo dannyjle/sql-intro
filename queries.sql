@@ -128,9 +128,11 @@ FROM "Employees"
 JOIN "Departments" ON "Departments"."Id" = "Employees"."DepartmentId"
 WHERE "Building" = 'Main'
 
-SELECT * 
+SELECT *
 FROM "ProductOrders"
-Where "ProductId" = 2;
+JOIN "Products" ON "Products"."Id" = "ProductOrders"."ProductId"
+JOIN "Orders" ON "Orders"."Id" = "ProductOrders"."OrderId"
+WHERE "ProductId" = 2
 
 SELECT *
 FROM "ProductOrders"
