@@ -112,3 +112,9 @@ VALUES (1, 1, 3);
 
 INSERT INTO "ProductOrders" ("ProductId", "OrderId", "OrderQuantity") 
 VALUES (2, 1, 2); 
+
+SELECT "Employee" FROM "Departments" WHERE "Building" = 'North Side';
+
+SELECT "Employee" FROM "Departments" WHERE "Building" = 'East Side';
+
+
