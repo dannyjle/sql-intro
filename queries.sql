@@ -103,3 +103,6 @@ VALUES (12.45, 'Widget', 'The Original Widget', 100);
 
 INSERT INTO "Products" ("Price",  "Name", "Description", "QuantityInStock")
 VALUES (99.99, 'Flowbee', 'Perfect for haircuts', 3);
+
+INSERT INTO "Orders" ("OrderNumber", "DatePlaced", "Email")
+VALUES ('X529', '01/01/2020 4:55PM', 'person@example.com');
