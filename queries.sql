@@ -131,7 +131,6 @@ WHERE "Building" = 'Main'
 SELECT *
 FROM "ProductOrders"
 JOIN "Products" ON "Products"."Id" = "ProductOrders"."ProductId"
-JOIN "Orders" ON "Orders"."Id" = "ProductOrders"."OrderId"
 WHERE "ProductId" = 2
 
 SELECT *
